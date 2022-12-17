@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A801AA5F2936B8B40022F16C /* TextFieldObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801AA5E2936B8B40022F16C /* TextFieldObserver.swift */; };
+		A80DB10329327ACB001A6863 /* Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DB10229327ACB001A6863 /* Exporter.swift */; };
+		A819A1E729317EFA0092C745 /* Recents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A819A1E629317EFA0092C745 /* Recents.swift */; };
+		A8563734293D864400ABAC62 /* URL+realURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8563733293D864400ABAC62 /* URL+realURL.swift */; };
+		A8563736293D89C800ABAC62 /* URL+subdirectories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8563735293D89C800ABAC62 /* URL+subdirectories.swift */; };
+		A89991F329380CC100552A00 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89991F229380CC100552A00 /* PreferencesView.swift */; };
+		A8A91A45293578B000C2DB90 /* Sequence+asyncForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A91A44293578B000C2DB90 /* Sequence+asyncForEach.swift */; };
+		A8C1603429306692004F7927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C1603329306692004F7927 /* Assets.xcassets */; };
+		A8C1603729306692004F7927 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C1603629306692004F7927 /* Preview Assets.xcassets */; };
+		A8C1603F293066A9004F7927 /* Bibi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A8C1603E293066A9004F7927 /* Bibi.mp3 */; };
+		A8C16041293066C2004F7927 /* StarForgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16040293066C2004F7927 /* StarForgeApp.swift */; };
+		A8C1604B293066CD004F7927 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16043293066CD004F7927 /* SetupView.swift */; };
+		A8C1604C293066CD004F7927 /* ActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16044293066CD004F7927 /* ActionsView.swift */; };
+		A8C1604D293066CD004F7927 /* ModListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16045293066CD004F7927 /* ModListView.swift */; };
+		A8C1604E293066CD004F7927 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16046293066CD004F7927 /* InfoView.swift */; };
+		A8C1604F293066CD004F7927 /* TaskButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16047293066CD004F7927 /* TaskButtonView.swift */; };
+		A8C16050293066CD004F7927 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16048293066CD004F7927 /* CheckboxView.swift */; };
+		A8C16051293066CD004F7927 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16049293066CD004F7927 /* ContentView.swift */; };
+		A8C16052293066CD004F7927 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1604A293066CD004F7927 /* LoadingView.swift */; };
+		A8C16058293066D4004F7927 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16054293066D4004F7927 /* FileHelper.swift */; };
+		A8C16059293066D4004F7927 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16055293066D4004F7927 /* AlertHelper.swift */; };
+		A8C1605A293066D4004F7927 /* ControlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16056293066D4004F7927 /* ControlHelper.swift */; };
+		A8C1605B293066D4004F7927 /* TarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16057293066D4004F7927 /* TarHelper.swift */; };
+		A8C1605E293066DA004F7927 /* URL+slash.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1605D293066DA004F7927 /* URL+slash.swift */; };
+		A8C16061293066E1004F7927 /* RepoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16060293066E1004F7927 /* RepoBuilder.swift */; };
+		A8C16068293066E5004F7927 /* AlertPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16063293066E5004F7927 /* AlertPriority.swift */; };
+		A8C16069293066E5004F7927 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16064293066E5004F7927 /* Control.swift */; };
+		A8C1606A293066E5004F7927 /* StarForgeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16065293066E5004F7927 /* StarForgeError.swift */; };
+		A8C1606B293066E5004F7927 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16066293066E5004F7927 /* Category.swift */; };
+		A8C1606C293066E5004F7927 /* Tier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16067293066E5004F7927 /* Tier.swift */; };
+		A8C16071293066EB004F7927 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1606E293066EA004F7927 /* Downloader.swift */; };
+		A8C16072293066EB004F7927 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C1606F293066EA004F7927 /* Progress.swift */; };
+		A8C16073293066EB004F7927 /* Installer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C16070293066EA004F7927 /* Installer.swift */; };
+		A8C1607629306769004F7927 /* ZSTD in Frameworks */ = {isa = PBXBuildFile; productRef = A8C1607529306769004F7927 /* ZSTD */; };
+		A8C1607929306773004F7927 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = A8C1607829306773004F7927 /* ZIPFoundation */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A801AA5E2936B8B40022F16C /* TextFieldObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldObserver.swift; sourceTree = "<group>"; };
+		A80DB10229327ACB001A6863 /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
+		A819A1E629317EFA0092C745 /* Recents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recents.swift; sourceTree = "<group>"; };
+		A8563733293D864400ABAC62 /* URL+realURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+realURL.swift"; sourceTree = "<group>"; };
+		A8563735293D89C800ABAC62 /* URL+subdirectories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+subdirectories.swift"; sourceTree = "<group>"; };
+		A89991F229380CC100552A00 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		A8A91A44293578B000C2DB90 /* Sequence+asyncForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+asyncForEach.swift"; sourceTree = "<group>"; };
+		A8C1602C29306691004F7927 /* StarForge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarForge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C1603329306692004F7927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8C1603629306692004F7927 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8C1603829306692004F7927 /* StarForge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StarForge.entitlements; sourceTree = "<group>"; };
+		A8C1603E293066A9004F7927 /* Bibi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bibi.mp3; sourceTree = "<group>"; };
+		A8C16040293066C2004F7927 /* StarForgeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarForgeApp.swift; sourceTree = "<group>"; };
+		A8C16043293066CD004F7927 /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		A8C16044293066CD004F7927 /* ActionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsView.swift; sourceTree = "<group>"; };
+		A8C16045293066CD004F7927 /* ModListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModListView.swift; sourceTree = "<group>"; };
+		A8C16046293066CD004F7927 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		A8C16047293066CD004F7927 /* TaskButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskButtonView.swift; sourceTree = "<group>"; };
+		A8C16048293066CD004F7927 /* CheckboxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
+		A8C16049293066CD004F7927 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8C1604A293066CD004F7927 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A8C16054293066D4004F7927 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		A8C16055293066D4004F7927 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		A8C16056293066D4004F7927 /* ControlHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlHelper.swift; sourceTree = "<group>"; };
+		A8C16057293066D4004F7927 /* TarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarHelper.swift; sourceTree = "<group>"; };
+		A8C1605D293066DA004F7927 /* URL+slash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+slash.swift"; sourceTree = "<group>"; };
+		A8C16060293066E1004F7927 /* RepoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoBuilder.swift; sourceTree = "<group>"; };
+		A8C16063293066E5004F7927 /* AlertPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPriority.swift; sourceTree = "<group>"; };
+		A8C16064293066E5004F7927 /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		A8C16065293066E5004F7927 /* StarForgeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarForgeError.swift; sourceTree = "<group>"; };
+		A8C16066293066E5004F7927 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A8C16067293066E5004F7927 /* Tier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tier.swift; sourceTree = "<group>"; };
+		A8C1606E293066EA004F7927 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		A8C1606F293066EA004F7927 /* Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		A8C16070293066EA004F7927 /* Installer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Installer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8C1602929306691004F7927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C1607629306769004F7927 /* ZSTD in Frameworks */,
+				A8C1607929306773004F7927 /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8C1602329306691004F7927 = {
+			isa = PBXGroup;
+			children = (
+				A8C1602E29306691004F7927 /* StarForge */,
+				A8C1602D29306691004F7927 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8C1602D29306691004F7927 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8C1602C29306691004F7927 /* StarForge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8C1602E29306691004F7927 /* StarForge */ = {
+			isa = PBXGroup;
+			children = (
+				A8C16040293066C2004F7927 /* StarForgeApp.swift */,
+				A8C1606D293066EA004F7927 /* Core */,
+				A8C16062293066E5004F7927 /* DataTypes */,
+				A8C1605F293066E1004F7927 /* Development */,
+				A8C1605C293066DA004F7927 /* Extensions */,
+				A8C16053293066D4004F7927 /* Helpers */,
+				A8C16042293066CD004F7927 /* Views */,
+				A8C1603E293066A9004F7927 /* Bibi.mp3 */,
+				A8C1603329306692004F7927 /* Assets.xcassets */,
+				A8C1603829306692004F7927 /* StarForge.entitlements */,
+				A8C1603529306692004F7927 /* Preview Content */,
+			);
+			path = StarForge;
+			sourceTree = "<group>";
+		};
+		A8C1603529306692004F7927 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A8C1603629306692004F7927 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8C16042293066CD004F7927 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8C16044293066CD004F7927 /* ActionsView.swift */,
+				A8C16048293066CD004F7927 /* CheckboxView.swift */,
+				A8C16049293066CD004F7927 /* ContentView.swift */,
+				A8C16046293066CD004F7927 /* InfoView.swift */,
+				A8C1604A293066CD004F7927 /* LoadingView.swift */,
+				A8C16045293066CD004F7927 /* ModListView.swift */,
+				A89991F229380CC100552A00 /* PreferencesView.swift */,
+				A8C16043293066CD004F7927 /* SetupView.swift */,
+				A8C16047293066CD004F7927 /* TaskButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8C16053293066D4004F7927 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8C16055293066D4004F7927 /* AlertHelper.swift */,
+				A8C16056293066D4004F7927 /* ControlHelper.swift */,
+				A8C16054293066D4004F7927 /* FileHelper.swift */,
+				A8C16057293066D4004F7927 /* TarHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8C1605C293066DA004F7927 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8A91A44293578B000C2DB90 /* Sequence+asyncForEach.swift */,
+				A8563733293D864400ABAC62 /* URL+realURL.swift */,
+				A8C1605D293066DA004F7927 /* URL+slash.swift */,
+				A8563735293D89C800ABAC62 /* URL+subdirectories.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A8C1605F293066E1004F7927 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				A8C16060293066E1004F7927 /* RepoBuilder.swift */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		A8C16062293066E5004F7927 /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				A8C16063293066E5004F7927 /* AlertPriority.swift */,
+				A8C16066293066E5004F7927 /* Category.swift */,
+				A8C16064293066E5004F7927 /* Control.swift */,
+				A8C16065293066E5004F7927 /* StarForgeError.swift */,
+				A8C16067293066E5004F7927 /* Tier.swift */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		A8C1606D293066EA004F7927 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A8C1606E293066EA004F7927 /* Downloader.swift */,
+				A80DB10229327ACB001A6863 /* Exporter.swift */,
+				A8C1606F293066EA004F7927 /* Progress.swift */,
+				A8C16070293066EA004F7927 /* Installer.swift */,
+				A819A1E629317EFA0092C745 /* Recents.swift */,
+				A801AA5E2936B8B40022F16C /* TextFieldObserver.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8C1602B29306691004F7927 /* StarForge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8C1603B29306692004F7927 /* Build configuration list for PBXNativeTarget "StarForge" */;
+			buildPhases = (
+				A8C1602829306691004F7927 /* Sources */,
+				A8C1602929306691004F7927 /* Frameworks */,
+				A8C1602A29306691004F7927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarForge;
+			packageProductDependencies = (
+				A8C1607529306769004F7927 /* ZSTD */,
+				A8C1607829306773004F7927 /* ZIPFoundation */,
+			);
+			productName = StarForge;
+			productReference = A8C1602C29306691004F7927 /* StarForge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8C1602429306691004F7927 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A8C1602B29306691004F7927 = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
+					};
+				};
+			};
+			buildConfigurationList = A8C1602729306691004F7927 /* Build configuration list for PBXProject "StarForge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8C1602329306691004F7927;
+			packageReferences = (
+				A8C1607429306769004F7927 /* XCRemoteSwiftPackageReference "Elva" */,
+				A8C1607729306773004F7927 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			productRefGroup = A8C1602D29306691004F7927 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8C1602B29306691004F7927 /* StarForge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8C1602A29306691004F7927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C1603F293066A9004F7927 /* Bibi.mp3 in Resources */,
+				A8C1603729306692004F7927 /* Preview Assets.xcassets in Resources */,
+				A8C1603429306692004F7927 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8C1602829306691004F7927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C1605B293066D4004F7927 /* TarHelper.swift in Sources */,
+				A8563734293D864400ABAC62 /* URL+realURL.swift in Sources */,
+				A8C1604B293066CD004F7927 /* SetupView.swift in Sources */,
+				A8C1606B293066E5004F7927 /* Category.swift in Sources */,
+				A8C16059293066D4004F7927 /* AlertHelper.swift in Sources */,
+				A819A1E729317EFA0092C745 /* Recents.swift in Sources */,
+				A801AA5F2936B8B40022F16C /* TextFieldObserver.swift in Sources */,
+				A8C1604C293066CD004F7927 /* ActionsView.swift in Sources */,
+				A8C16051293066CD004F7927 /* ContentView.swift in Sources */,
+				A80DB10329327ACB001A6863 /* Exporter.swift in Sources */,
+				A8C16072293066EB004F7927 /* Progress.swift in Sources */,
+				A8C16041293066C2004F7927 /* StarForgeApp.swift in Sources */,
+				A8C1604F293066CD004F7927 /* TaskButtonView.swift in Sources */,
+				A8C16071293066EB004F7927 /* Downloader.swift in Sources */,
+				A8563736293D89C800ABAC62 /* URL+subdirectories.swift in Sources */,
+				A8A91A45293578B000C2DB90 /* Sequence+asyncForEach.swift in Sources */,
+				A8C16050293066CD004F7927 /* CheckboxView.swift in Sources */,
+				A8C16069293066E5004F7927 /* Control.swift in Sources */,
+				A8C16073293066EB004F7927 /* Installer.swift in Sources */,
+				A8C16068293066E5004F7927 /* AlertPriority.swift in Sources */,
+				A8C1604E293066CD004F7927 /* InfoView.swift in Sources */,
+				A8C1604D293066CD004F7927 /* ModListView.swift in Sources */,
+				A8C16052293066CD004F7927 /* LoadingView.swift in Sources */,
+				A8C16058293066D4004F7927 /* FileHelper.swift in Sources */,
+				A89991F329380CC100552A00 /* PreferencesView.swift in Sources */,
+				A8C1606A293066E5004F7927 /* StarForgeError.swift in Sources */,
+				A8C16061293066E1004F7927 /* RepoBuilder.swift in Sources */,
+				A8C1606C293066E5004F7927 /* Tier.swift in Sources */,
+				A8C1605A293066D4004F7927 /* ControlHelper.swift in Sources */,
+				A8C1605E293066DA004F7927 /* URL+slash.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A8C1603929306692004F7927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8C1603A29306692004F7927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A8C1603C29306692004F7927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = StarForge/StarForge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StarForge/Preview Content\"";
+				DEVELOPMENT_TEAM = 927QBR5K88;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lilliana.StarForge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A8C1603D29306692004F7927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = StarForge/StarForge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StarForge/Preview Content\"";
+				DEVELOPMENT_TEAM = 927QBR5K88;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lilliana.StarForge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8C1602729306691004F7927 /* Build configuration list for PBXProject "StarForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C1603929306692004F7927 /* Debug */,
+				A8C1603A29306692004F7927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8C1603B29306692004F7927 /* Build configuration list for PBXNativeTarget "StarForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C1603C29306692004F7927 /* Debug */,
+				A8C1603D29306692004F7927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8C1607429306769004F7927 /* XCRemoteSwiftPackageReference "Elva" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/L1MeN9Yu/Elva.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A8C1607729306773004F7927 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				branch = development;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8C1607529306769004F7927 /* ZSTD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8C1607429306769004F7927 /* XCRemoteSwiftPackageReference "Elva" */;
+			productName = ZSTD;
+		};
+		A8C1607829306773004F7927 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8C1607729306773004F7927 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A8C1602429306691004F7927 /* Project object */;
+}
